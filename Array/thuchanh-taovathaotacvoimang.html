@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Sample Screen:</h2>
+<label><input type="text" id="element"/></label>
+<label><input type="button" value="Add" onclick="add()"/></label>
+<label><input type="button" value="Display" onclick="display()"/></label>
+<br><br>
+<hr>
+<p id="result"></p>
+</body>
+<script>
+    let x = 1
+    let array = Array()
+    function add() {
+        array[x] = document.getElementById("element").value
+        alert("Element " + array[x] +" added at index " + x)
+        x++
+        document.getElementById("element").value = ""
+    }
+    function display() {
+        let screen = ""
+        for (let i=1;i<array.length;i++){
+            screen += "Element " + i + " = " +  array[i] + "<br>"
+        }
+        document.getElementById("result").innerHTML = screen
+    }
+
+//    Element: 123 Added at index 0
+
+</script>
+</html>
