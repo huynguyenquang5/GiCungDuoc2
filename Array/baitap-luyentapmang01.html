@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="debug.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    // Bai 1
+    // let array = [];
+    // let arrayCompare = [];
+    // for (let i = 0; i < 10; i++) {
+    //     let number = +prompt("Enter number " + (i + 1));
+    //     array.push(number);
+    //     if (array[i] >= 10) {
+    //         arrayCompare.push(array[i])
+    //     }
+    // }
+    // document.write("Numbers: " + array.toString() + "<br>");
+    // document.write("Numbers >= 10: " +  arrayCompare.length);
+
+
+    // Bai 2
+    // let array = [];
+    // let numberMax = 0;
+    // for (let i = 0; i < 10; i++) {
+    //     let number = +prompt("Enter number " + (i + 1));
+    //     array.push(number);
+    //     if (array[i] > numberMax){
+    //         numberMax = array[i]
+    //     }
+    // }
+    // document.write("Max = " + numberMax)
+
+    // Bai 3
+    // let numbers = +prompt("How many numbers: ");
+    // let array = [];
+    // let numberMax = 0;
+    // let total = 0;
+    // for (let i = 0; i < numbers; i++) {
+    //     let number = +prompt("Enter number " + (i + 1));
+    //     array.push(number);
+    //     if (array[i] > numberMax) {
+    //         numberMax = array[i]
+    //     }
+    //     total = total + array[i];
+    // }
+    // document.write("Numbers: " + array.join(", ") + "<br>");
+    // document.write("Max = " + numberMax + "<br>");
+    // document.write("Average: " + total / numbers)
+
+    // Bai 4
+    // let numbers = +prompt("How many numbers: ");
+    // let array = [];
+    // for (let i = 0; i < numbers; i++) {
+    //     let number = +prompt("Enter number " + (i + 1));
+    //     array.push(number);
+    // }
+    // document.write("Before: " + array.join(", ") + "<br>");
+    // let firstIndex = 0;
+    // let lastIndex = array.length - 1;
+    // while(firstIndex<lastIndex){
+    //     let numberSort = array[firstIndex];
+    //     array[firstIndex] = array[lastIndex];
+    //     array[lastIndex] = numberSort;
+    //     firstIndex++;
+    //     lastIndex--;
+    // }
+    // document.write("After: " + array.join(", "));
+
+    // Bai 5
+    // let numbers = +prompt("How many numbers: ");
+    // let array = [];
+    // let arrayMinus = [];
+    // for (let i = 0; i < numbers; i++) {
+    //     let number = +prompt("Enter number " + (i + 1));
+    //     array.push(number);
+    //     if (array[i] < 0) {
+    //         arrayMinus.push(array[i]);
+    //     }
+    // }
+    // document.write("Minus: " + arrayMinus.join(", ") + "<br>");
+    // document.write("Numbers of minus: " + arrayMinus.length);
+
+    // Bai 6
+    // let array = [];
+    // for (let i = 0; i < 10; i++) {
+    //     let number = +prompt("Enter number  " + (i + 1));
+    //     array.push(number)
+    // }
+    // document.write("Array: " + array.join(", ") + "<br>");
+    // let numberCheck = +prompt("Enter check:");
+    // let numberCheck2 = parseInt("numberCheck");
+    // for (let i = 0; i < 10; i++){
+    //     numberCheck2 = numberCheck2 === array[i];
+    // }
+    // if (numberCheck2) {
+    //     document.write(numberCheck + " is in the array")
+    // } else {
+    //     document.write(numberCheck + " is not in the array")
+    // }
+
+    // Bai 7
+    // let array = [];
+    // for (let i = 0; i < 10; i++) {
+    //     let number = +prompt("Enter number  " + (i + 1));
+    //     array.push(number)
+    // }
+    // let numberCheck = +prompt("Enter check:");
+    // for (let i = 0; i < 10; i++) {
+    //     if (numberCheck === array[i]){
+    //         document.write(numberCheck + " in the array" + "<br>")
+    //         array.splice(i,1);
+    //         array.push(0);
+    //     }
+    // }
+    // document.write("After check: " + array)
+
+    // Bai 8
+    // let array = [];
+    // for (let i = 0; i < 10; i++) {
+    //     let number = +prompt("Enter number  " + (i + 1));
+    //     array.push(number)
+    // }
+    // document.write("Before sort: " + array.join(", ") + "<br>")
+    // array.sort(function(a, b) {
+    //     return a - b
+    // })
+    // document.write("After sort (ascending): " + array.join(", ") + "<br>");
+    // array.sort(function(a, b) {
+    //     return b - a
+    // })
+    // document.write("After sort (descending): " + array.join(", "));
+
+    // Bai 9
+    // let a = [1,2,3,4,5,6,7,8,9,10];
+    // let b = [11,12,13,14,15,16,17,18,19,20];
+    // let c = a.concat(b);
+    // document.write(c.toString())
+
+</script>
+</html>
