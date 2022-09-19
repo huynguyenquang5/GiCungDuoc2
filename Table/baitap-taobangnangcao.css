@@ -1,0 +1,105 @@
+/*Phan 1*/
+body{
+    background-color: #ffb228;
+}
+table{
+    border-collapse: collapse;
+}
+td {
+    border: 1px black solid;
+    width: 50px;
+    height: 50px;
+}
+tr:nth-child(even) td:nth-child(odd) {
+    background: black
+}
+tr:nth-child(even) td:nth-child(even) {
+    background: white;
+}
+tr:nth-child(odd) td:nth-child(odd) {
+    background: white;
+}
+tr:nth-child(odd) td:nth-child(even) {
+    background: black;
+}
+
+/*Phan 2*/
+/*h2 {*/
+/*    color: blue;*/
+/*    text-align: center*/
+/*}*/
+
+/*table {*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    border-collapse: collapse;*/
+/*    border: silver;*/
+/*    height: 200px;*/
+/*}*/
+/*tr {*/
+/*    text-align: center*/
+/*}*/
+
+/*th {*/
+/*    color: white;*/
+/*    background-color: orange;*/
+/*    width: 50px;*/
+/*}*/
+
+/*td {*/
+/*    font-weight: bold;*/
+/*    border: 2px solid silver;*/
+/*}*/
+
+/*th.bg {*/
+/*    background-color: white;*/
+/*    color: black*/
+/*}*/
+
+/*th.cn {*/
+/*    background-color: white;*/
+/*    color: red*/
+/*}*/
+
+/*td.cn {*/
+/*    background-color: white;*/
+/*    color: red*/
+/*}*/
+
+/*th.tb {*/
+/*    background-color: white;*/
+/*    color: blue*/
+/*}*/
+
+/*td.tb {*/
+/*    background-color: white;*/
+/*    color: blue*/
+/*}*/
+
+/*span {*/
+/*    font-size: 8px*/
+/*}*/
+
+/*#tr1 th {*/
+/*    border: 2px solid white;*/
+/*}*/
+
+/*#tr1 .cn {*/
+/*    background-color: red;*/
+/*    color: white*/
+/*}*/
+
+/*#tr1 .tb {*/
+/*    background-color: blue;*/
+/*    color: white*/
+/*}*/
+
+/*#tr2 {*/
+/*    border: 2px;*/
+/*    border-bottom-color: silver;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#tr3 {*/
+/*    border-top-color: silver;*/
+}
