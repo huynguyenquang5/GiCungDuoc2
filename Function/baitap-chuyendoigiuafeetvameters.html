@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="feet">Feet: <input type="number" id="feet" oninput="feetConvert(this.value)"/></label>
+<p>Meters: <span id="result1"></span></p>
+
+<label for="meters">Meters: <input type="number" id="meters" oninput="metersConvert(this.value)"/></label>
+<p>Feet: <span id="result2"></span></p>
+</body>
+<script>
+  function feetConvert(feet) {
+    feet = parseFloat(feet);
+    document.getElementById("result1").innerHTML = 0.305 * feet;
+  }
+    function metersConvert(meters) {
+      meters = parseFloat(meters);
+      document.getElementById("result2").innerHTML = 3.279 * meters;
+    }
+
+</script>
+</html>

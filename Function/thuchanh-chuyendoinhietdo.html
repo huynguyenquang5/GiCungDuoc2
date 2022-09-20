@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+<label for="fahrenheit">Fahrenheit <input type="number" id="fahrenheit" oninput="temperatureConvert()"/></label>
+<p>Celsius: <span id="result"></span></p>
+</body>
+<script>
+function temperatureConvert(fah){
+    fah = document.getElementById("fahrenheit").value;
+    document.getElementById("result").innerHTML = (fah - 32) / 9 * 5;
+}
+</script>
+</html>
