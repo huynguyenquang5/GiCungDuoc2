@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 1-->
+<!--<p id="text" onclick="message()">Click</p>-->
+
+<!--Bai 2-->
+<!--<label><input type="number" id="number" oninput="numberInc(this.value)"/></label>-->
+<!--<p>Result: <span id="result"></span></p>-->
+
+<!--Bai 3-->
+<!--<label for="numb1">Number 1: <input type="number" id="numb1" oninput="numberCompare(this.value)"/></label>-->
+<!--<label for="numb2">Number 2: <input type="number" id="numb2" oninput="numberCompare(this.value)"/></label>-->
+<!--<p>Result: <span id="result"></span></p>-->
+</body>
+<script>
+    // Bai 1
+    // function message(){
+    //     document.getElementById("text").innerHTML = '"Xin Chao"';
+    // }
+
+    // Bai 2
+    // function numberInc(n){
+    //     n = parseFloat(n);
+    //     n++;
+    //     document.getElementById("result").innerHTML = n;
+    // }
+
+    // Bai 3
+    // numb1 = parseFloat(prompt("Enter Number 1"));
+    // numb2 = parseFloat(prompt("Enter Number 2"));
+    // function numberCompare(numb1,numb2) {
+    //     let result;
+    //     if (numb1 > numb2) {
+    //         result = numb1 + " > " + numb2;
+    //         return result;
+    //     } else {
+    //         result = "Total: " + (numb1 + numb2);
+    //         return result;
+    //     }
+    // }
+    // alert(numberCompare(numb1,numb2));
+
+    // Bai 4
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert("Before: " + result);
+    // result = addNumbers();
+    // alert("After : " + result);
+
+    // Bai 5
+    let people = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let stars = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let peopleFind = prompt("Enter a name");
+    function findStar() {
+        let result = "Not Found";
+        for(let i=0; i<people.length; i++){
+            if (peopleFind === people[i])
+            for(let j=0; j<stars.length; j++){
+                if (i===j) {
+                    result = stars[j];
+                }
+            }
+        }
+        return result;
+    }
+    document.write(findStar());
+
+
+</script>
+
+</html>
