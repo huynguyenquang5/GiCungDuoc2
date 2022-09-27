@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="640px" height="480px"  style="border:1px solid #d3d3d3"></canvas>
+<br>
+</body>
+<script>
+  let myRectangle = function (length,width){
+    this.length = length;
+    this.width = width;
+    this.getLength = function (){
+      return this.length;
+    }
+    this.getWidth = function (){
+      return this.width;
+    }
+    this.getArea = function (){
+      return this.length * this.width;
+    }
+    this.getPerimeter = function (){
+      return 2*(this.length + this.width);
+    }
+    this.setWidth = function (width){
+      this.width = width;
+    }
+    this.setLength = function (length){
+      this.length = length;
+    }
+  }
+  function rectangleCanvas(){
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+    let rectangle = new myRectangle(200,100);
+    ctx.rect(200,200,rectangle.length,rectangle.width);
+    ctx.fill();
+  }
+
+  let rectangle = new myRectangle(200,100);
+  rectangle.setLength(300);
+  rectangle.setWidth(200);
+  let area = rectangle.getArea();
+  let perimeter = rectangle.getPerimeter();
+  let width = rectangle.getWidth();
+  let length = rectangle.getLength();
+
+  rectangleCanvas();
+  document.write("Width: " + width + "<br>");
+  document.write("Length: " + length + "<br>");
+  document.write("Area: " + area + "<br>");
+  document.write("Perimeter: " + perimeter);
+</script>
+</html>

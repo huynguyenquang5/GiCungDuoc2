@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  // Hàm tạo (constructor) và đối tượng
+  //Before
+  // function createNewPerson(name){
+  //   let obj = {};
+  //   obj.name = name;
+  //   obj.greeting = function (){
+  //     alert("Hi! I'm " + this.name + ".");
+  //   }
+  //   return obj;
+  // }
+  // let salva = createNewPerson("Salva");
+  // salva.name;
+  // salva.greeting();
+
+  // After
+  // function Person(first, last, age, gender, interests){
+  //     this.name = {
+  //         first,
+  //         last
+  //     };
+  //     this.age = age;
+  //     this.gender = gender;
+  //     this.interests = interests;
+  //     this.bio = function() {
+  //         if (this.gender === "male"){
+  //             alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+  //         } else {
+  //             alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. She likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+  //         }
+  //     };
+  //     this.greeting = function (){
+  //         alert('Hi! I\'m ' + this.name.first + '.');
+  //     }
+  // }
+  // let person1 = new Person("Bob");
+  // let person2 = new Person("Sarah");
+  // person1.name;
+  // person1.greeting();
+  // person2.name;
+  // person2.greeting();
+  // var person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+  // person1['age']
+  // person1.interests[1]
+  // person1.bio()
+
+  // let person1 = new Object(
+  //     {
+  //         name: "Chris",
+  //         age: 38,
+  //         greeting: function (){
+  //             alert("Hi! I'm " + this.name + ".");
+  //         }
+  //     }
+  // );
+  // person1.greeting();
+  // let person2 = Object.create(person1);
+  // person2.name:
+  // person2.greeting()
+
+
+</script>
+</html>
